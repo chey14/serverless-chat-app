@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    container_name: chat-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - AWS_REGION=ap-south-1
+      - WSSAPIGATEWAYENDPOINT=https://qv98sck6o4.execute-api.ap-south-1.amazonaws.com/production
+    restart: always
+
+  frontend:
+    build: ./frontend
+    container_name: chat-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: always
