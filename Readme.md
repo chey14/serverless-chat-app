@@ -146,7 +146,12 @@ This project successfully demonstrates how DevOps practices can be applied to au
 
 Any change pushed to the repository is automatically tested, built, and deployed, making the development-to-production cycle efficient and seamless.
 
+## 10. App Flow Diagram
 
-## 10. Work flow Diagram
+![App flow Diagram](images/ChatApp_Flow.png)
+
+
+
+## 11. Work flow Diagram
 
 ![Work flow Diagram](images/project_workflow.png)
