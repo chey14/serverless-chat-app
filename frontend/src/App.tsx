@@ -113,21 +113,22 @@ function App() {
   };
 
   return (
-    <div className="flex">
-        <Sidebar
-          me={nickname}
-          clients={clients}
-          setTarget={(target) => setNewTarget(target)}
-        />
-      <div className="flex-auto">
-        <Conversation
-          target={target}
-          messages={messages}
-          sendMessage={sendMessage}
-        />
-      </div>
+  <div className="flex">
+      <Sidebar
+        me={nickname}
+        clients={clients}
+        setTarget={(target) => setNewTarget(target)}
+      />
+    <div className="flex-auto">
+      <Conversation
+        target={target}
+        messages={messages}
+        sendMessage={sendMessage}
+      />
     </div>
-  );
+  </div>
+);
 }
+
 
 export default App;
