@@ -113,22 +113,29 @@ function App() {
   };
 
   return (
-  <div className="flex">
+  <div className="flex flex-col h-screen">
+    {/* CI/CD Test Banner */}
+    <div className="bg-green-600 text-white text-center py-2 font-bold">
+      🚀 CI/CD Pipeline Working Successfully
+    </div>
+
+    <div className="flex flex-1">
       <Sidebar
         me={nickname}
         clients={clients}
         setTarget={(target) => setNewTarget(target)}
       />
-    <div className="flex-auto">
-      <Conversation
-        target={target}
-        messages={messages}
-        sendMessage={sendMessage}
-      />
+      <div className="flex-auto">
+        <Conversation
+          target={target}
+          messages={messages}
+          sendMessage={sendMessage}
+        />
+      </div>
     </div>
   </div>
 );
-const x=;
+
 }
 
 
