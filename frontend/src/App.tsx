@@ -134,6 +134,7 @@ function App() {
       </div>
     </div>
   </div>
+  const x=10;
 );
 }
 
