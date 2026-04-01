@@ -127,9 +127,9 @@ function App() {
       />
     </div>
   </div>
-  
+  const x=10;
 );
-const x=10;
+
 
 }
 
