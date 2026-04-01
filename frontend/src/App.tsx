@@ -129,6 +129,7 @@ function App() {
   </div>
   
 );
+const x=10;
 
 }
 
